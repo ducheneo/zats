@@ -19,6 +19,7 @@ import java.net.URL;
 import java.util.LinkedList;
 import java.util.List;
 
+import javax.servlet.ServletContext;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
@@ -101,7 +102,11 @@ public class DefaultZatsEnvironment implements ZatsEnvironment{
 		builder.addContentRoot(resourceRoot);
 		emulator = builder.create();
 	}
-	
+
+	public void init(ServletContext servletContext) {
+
+	}
+
 	/**
 	 * In order to catch exception from zk ExecutionCleanup, we copy the WEB-INF dir
 	 * to tmp dir while the location is given from java.io.tmpdir 

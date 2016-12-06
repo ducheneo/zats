@@ -46,7 +46,7 @@
 	<modules>
 		<module>../zats-common</module>
 		<module>../zats-mimic</module>
-		<module>../zats-mimic-ext6</module>
+		<!--<module>../zats-mimic-ext6</module>-->
 		<module>../zats-mimic-ext7</module>
 		<!-- <module>../zats-example</module> -->
 	</modules>
@@ -64,12 +64,12 @@
 			<version>${project.version}</version>
 			<scope>provided</scope>
 		</dependency>
-		<dependency>
+<!--		<dependency>
 			<groupId>org.zkoss.zats</groupId>
 			<artifactId>zats-mimic-ext6</artifactId>
 			<version>${project.version}</version>
 			<scope>provided</scope>
-		</dependency>
+		</dependency>-->
 		<dependency>
 			<groupId>org.zkoss.zats</groupId>
 			<artifactId>zats-mimic-ext7</artifactId>

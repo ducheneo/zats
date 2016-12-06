@@ -55,6 +55,7 @@ public class JettyEmulator implements Emulator {
 
 	private Server server;
 	private int port;
+
 	private String address;
 	private String contextPath;
 
@@ -258,6 +259,10 @@ public class JettyEmulator implements Emulator {
 		} finally {
 			lock.unlock();
 		}
+	}
+
+	public void setPort(int port) {
+
 	}
 
 	private ServletContext getWrappedContext(final ServletContext delegate) {

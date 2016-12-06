@@ -85,5 +85,7 @@ public interface Emulator extends Closeable {
 	 */
 	String getSessionId();
 
+	void setPort(int port);
+
 	void close();
 }

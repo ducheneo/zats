@@ -12,6 +12,8 @@ Copyright (C) 2011 Potix Corporation. All Rights Reserved.
 package org.zkoss.zats.mimic;
 
 
+import javax.servlet.ServletContext;
+
 /**
  * the ZATS environment, to init/destroy a ZATS runtime for testing.
  *   
@@ -25,6 +27,12 @@ public interface ZatsEnvironment {
 	 * @param resourceRoot the resource root folder of the zul, it is usually the web content folder.
 	 */
 	public void init(String resourceRoot);
+
+	/**
+	 * initialize testing environment
+	 * @param servletContext the resource root folder of the zul, it is usually the web content folder.
+	 */
+	public void init(ServletContext servletContext);
 
 	/**
 	 * destroy this environment to release the resource.

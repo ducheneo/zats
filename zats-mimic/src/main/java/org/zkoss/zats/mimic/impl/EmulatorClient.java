@@ -358,6 +358,8 @@ public class EmulatorClient implements Client, ClientCtrl {
 			huc.addRequestProperty("User-Agent", "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)");
 			huc.addRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
 			huc.addRequestProperty("Accept-Language", "zh-tw,en-us;q=0.7,en;q=0.3");
+			// UGLY Hardcoding username for LEMONLDAP FILTER
+			huc.addRequestProperty("Auth-User", "appuser1");
 			// handle cookies
 			for (Entry<String, String> cookie : cookies.entrySet()) {
 				String value = cookie.getValue() != null ? cookie.getValue() : "";

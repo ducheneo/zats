@@ -44,6 +44,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<zk.version>7.0.0</zk.version>
+		<zkmax.version>7.0.0</zkmax.version>
 	</properties>
 	<repositories>
 		<repository>
@@ -57,6 +58,10 @@
 		<repository>
 			<id>ZK EE Evaluation</id>
 			<url>http://mavensync.zkoss.org/zk/ee-eval</url>
+		</repository>
+		<repository>
+			<id>lib_id</id>
+			<url>file://${project.basedir}/src/main/resources</url>
 		</repository>
 	</repositories>
 	<dependencies>
@@ -81,14 +86,13 @@
 		<dependency>
 			<groupId>org.zkoss.zk</groupId>
 			<artifactId>zkex</artifactId>
-			<version>${zk.version}</version>
-			<scope>test</scope>
+			<version>${zkmax.version}</version>
 		</dependency>
+
 		<dependency>
 			<groupId>org.zkoss.zk</groupId>
 			<artifactId>zkmax</artifactId>
-			<version>${zk.version}</version>
-			<scope>provided</scope>
+			<version>${zkmax.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.zkoss.zats</groupId>
